@@ -1,4 +1,3 @@
-package Loops;
 //printing hello world many times
 public class whileloop {
     public static void main(String[] args) {

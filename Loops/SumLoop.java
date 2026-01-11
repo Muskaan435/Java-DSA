@@ -1,4 +1,3 @@
-package Loops;
 import java.util.*;
 //print sum of natural number till n
 public class SumLoop {
