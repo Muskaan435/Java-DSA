@@ -12,6 +12,12 @@ public class MultiFunctions {
         }
         return fact;
     }
+    public static int coofficient(int n,int r){
+        int nuem = factorial(n);
+        int denm = factorial(r) * factorial(n-r);
+        int coef = nuem/denm;
+        return coef;
+    }
     
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
@@ -22,5 +28,6 @@ public class MultiFunctions {
         sc.close();
         System.out.println("product is : " +product(a,b));
         System.out.print(factorial(5));
+        System.out.print(coofficient(7, 3));
     }
 }
