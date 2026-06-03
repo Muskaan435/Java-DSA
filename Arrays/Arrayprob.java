@@ -63,9 +63,38 @@ public class Arrayprob{
         }
         return -1;
     }
+    static void reversearr(int arr[]){
+        int i = 0;
+        int n = arr.length;
+        int j = n - 1;
+
+        while(i<=j){
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+
+            i++;
+            j--;
+        }
+        for(int k : arr){
+            System.out.print(k +" ");
+        }
+    }
+    static void shiftBy1(int[] arr){
+        int temp = arr[arr.length -1];
+        for(int i = arr.length-1; i > 0;i--){
+            arr[i] = arr[i-1];
+        }
+        arr[0] = temp;
+        for(int k: arr){
+            System.out.print(k +" ");
+        }
+
+    }
     public static void main(String[] args) {
-        int arrs[] = {10,20,30,40,50,-25,60,-10,70,80,90,100};
-        System.out.println(unsorted(arrs));
+        int arrs[] = {1,2,3,4,5};
+        shiftBy1(arrs);
         
     }
+
 }
